@@ -1,21 +1,72 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
-
-# Run and deploy your AI Studio app
-
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/drive/1UxsBtLnehrNCVf-cnZ8JrrvrHlwyJOiu
-
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
 # Checksum-Integrity-Hub
+
+A modern web application for verifying file integrity and checksums using AI-powered analysis. Built with React, TypeScript, and Vite for fast development and optimal performance.
+
+## Features
+
+- 🔐 **File Integrity Verification** - Compute and verify file checksums
+- 🤖 **AI-Powered Analysis** - Leverage Gemini API for intelligent checksum analysis
+- ⚡ **Fast Performance** - Built with Vite for instant hot module replacement
+- 📦 **Type Safe** - Full TypeScript support for robust code
+
+## Prerequisites
+
+- Node.js (v16 or higher)
+- npm or yarn package manager
+- Gemini API key
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd Checksum-Integrity-Hub
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Create a `.env.local` file and add your Gemini API key:
+   ```
+   VITE_GEMINI_API_KEY=your_api_key_here
+   ```
+
+## Running the Application
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+The application will be available at `http://localhost:5173`
+
+## Project Structure
+
+```
+├── App.tsx                 # Main application component
+├── index.tsx               # React entry point
+├── index.html              # HTML template
+├── types.ts                # TypeScript type definitions
+├── vite.config.ts          # Vite configuration
+├── services/
+│   └── geminiService.ts    # Gemini API integration
+├── utils/
+│   └── hashUtils.ts        # Hash computation utilities
+├── package.json            # Project dependencies
+└── README.md               # This file
+```
+
+## Technologies Used
+
+- **React** - UI framework
+- **TypeScript** - Type-safe JavaScript
+- **Vite** - Next generation frontend tooling
+- **Gemini API** - AI-powered analysis
+- **Node.js** - Runtime environment
+
+## License
+
+MIT
