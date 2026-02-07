@@ -1,0 +1,5 @@
+{
+  "name": "Checksum Integrity Hub",
+  "description": "A professional-grade data integrity simulator to perform, verify, and understand checksums on both sender and receiver sides, featuring real-time hashing and AI-powered insights.",
+  "requestFramePermissions": []
+}
